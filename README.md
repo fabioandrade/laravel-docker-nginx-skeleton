@@ -7,8 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-Skeleton de uma aplicação Laravel utilizando Docker e o servidor Nginx.                                                                                                                                                                                                                                                                                                 
+Skeleton de uma aplicação Laravel utilizando Docker e o servidor Nginx.
+
 PHP: 8.0.14 Laravel: 8.75 
+
 1º Configurar o arquivo .env para que seja passada as variáveis de ambiente 
 
 2º executar o comando para criar os containers
