@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: mclaravel
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: laravel-skeleton
+    container_name: laravel-skeleton-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - laravelskeleton
+
+  nginx:
+    image: nginx:alpine
+    container_name: laravel-skeleton-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - laravelskeleton
+
+networks:
+  laravelskeleton:
+    driver: bridge
