@@ -21,3 +21,5 @@ PHP: 8.0.14 Laravel: 8.75
 
 4º Se ocorrer erro na key, executar o comando para definir a chave de uma aplicação laravel já existente
 "docker-compose exec app php artisan key:generate"
+
+5º Acessar o localhost ou localhost:80
