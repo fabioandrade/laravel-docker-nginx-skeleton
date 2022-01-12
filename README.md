@@ -13,7 +13,7 @@ PHP: 8.0.14 Laravel: 8.75
 
 3º executar o comando para baixar a vendor
 
-"docker-compose exec app composer install"
+"docker exec laravel_app composer install"
 
 4º Se ocorrer erro na key, executar o comando para definir a chave de uma aplicação laravel já existente
 
