@@ -1,22 +1,29 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 
-Skeleton de uma aplicação Laravel utilizando Docker e o servidor Nginx.
+<b>Skeleton Laravel</b>
 
-PHP: 8.0.14 Laravel: 8.75 
+Subindo a aplicação em desenvolvimento
 
-1º Configurar o arquivo .env para que seja passada as variáveis de ambiente 
+1º Realizar o clone do skeleton para o diretório mc-laravel
 
-2º executar o comando para criar os containers
+Ex.: git clone https://github.com/fabioandrade/laravel-docker-nginx-skeleton.git mc-laravel
 
-"docker-compose up -d"
+2º Acessar o diretório mc-laravel e executar o comando “docker-compose up --build”
 
-3º executar o comando para baixar a vendor
+3º Executar o comando “docker images” para verifica se as imagens “mc-laravel_nginx” e “mc-laravel_app” foram criadas.
 
-"docker exec laravel_app composer install"
+4º Inicializar os containers com o comando “docker-compose up” ou “docker-compose up -d”
 
-4º Se ocorrer erro na key, executar o comando para definir a chave de uma aplicação laravel já existente
+5º Acessar a url:
+localhost:8001
 
-"docker-compose exec app php artisan key:generate"
+6º Acessar a url abaixo para testar uma rota:
+localhost:8001/api/categories/1 
 
-5º Acessar o localhost ou localhost:80
+Tecnologias
+
+PHP: 8.0.14
+
+Laravel: 8.75
+
