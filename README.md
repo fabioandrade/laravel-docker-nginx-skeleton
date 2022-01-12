@@ -9,7 +9,7 @@ Subindo a aplicação em desenvolvimento
 
 Ex.: git clone https://github.com/fabioandrade/laravel-docker-nginx-skeleton.git mc-laravel
 
-2º Acessar o diretório mc-laravel e executar o comando “docker-compose up --build”
+2º Acessar o diretório mc-laravel e executar o comando “docker-compose up -d”
 
 3º Executar o comando “docker images” para verifica se as imagens “mc-laravel_nginx” e “mc-laravel_app” foram criadas.
 
